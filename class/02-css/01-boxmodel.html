@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>Document</title>
+    <style>
+        /*부모 박스에 flex 후 자식 정렬 설정
+            flex-direction justify-content 의 방향은 같고 aline-center 방향은 반대
+        */
+        /*absolute는 박스의 절대 위치 fixed는 보이는 화면 기준(네비게이션 바 고정)*/
+        *{
+            /* border를 기준으로 크기조절을 위한 사전작업 권장! */
+            box-sizing: border-box;
+        }
+        div{
+            width:80px;
+            height: 80px;
+            border: 2px solid red;
+            padding:15px;
+        }
+        .box{
+            width: 600px;
+            height: 600px;
+            display: flex;
+            flex-direction: column; /*나열 방향*/
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div>box1</div>
+    <div class="box">
+        <div>box2</div>
+        <div>box3</div>
+        <div>box4</div>
+    </div>
+    <div>box5</div>
+</body>
+</html>

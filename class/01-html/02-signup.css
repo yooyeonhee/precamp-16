@@ -1,0 +1,119 @@
+
+/* border 박스의 기준이 되는 테두리 */
+/* border-box -> border 고정 padding 조절 content-box 옵션에서 변경 필요*/
+*{
+    box-sizing: border-box;
+    margin:0px;
+}
+
+body{
+    background-color:white;
+}
+.background{
+    width: 670px;
+    height: 960px;
+    border: 1px solid #AACDFF;
+    box-shadow: 7px 7px 39px rgba(0, 104, 255, 0.25);
+    border-radius: 20px;
+}
+
+.form{
+    width: 470px;
+    height: 818px;
+    margin: 72px 100px 72px 100px;
+    font-size: 16px;
+    color: #797979;
+}
+/*제목*/
+h2{
+    width: 466px;
+    height: 94px;
+    font-size: 32px;
+    color: #0068FF;
+    margin-bottom: 60px;
+}
+/*입력*/
+/* input 아래 테두리만 보이게 함. */
+.line{
+    width: 100%;
+    height: 55px;
+    border: none;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid #CFCFCF;
+}
+/* input 입력 시 아래 테두리 색 변경 */
+.line:focus{
+    outline: none;
+    border-bottom: 1px solid #0068FF;
+}
+
+/* 가운데 정렬 시키기 위함 */
+.form__select{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Noto Sans CJK KR';
+    font-style: normal;
+    font-weight: 400;
+    color: black;
+}
+
+.form__select__gender{
+    font-size: 16px;
+    font-weight: 600;
+    margin : 40px auto 30px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.form__select__gender__radio{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 50px;
+}
+/* 라디오 버튼 크기 조절 */
+.form__select__gender input{
+    /* appearance: none; */
+    width:20px;
+    height:20px;
+    margin-right: 5px;
+    border-radius: 30px;
+    /* background-color: #797979; */
+}
+/*선택 시 버튼 커스텀*/
+/* .form__select__gender input:checked{
+    width:20px;
+    height:20px;
+    margin-right: 5px;
+    border-radius: 30px;
+    background-color: black;
+} */
+
+.form__select__agree{
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+/* 라디오 버튼 크기 조절 */
+.form__select__agree input{
+    width:20px;
+    height:20px;
+    margin-right: 15px;
+}
+
+hr{
+    counter-reset: #E6E6E6;
+    margin : 30px 0px;
+}
+button{
+    width: 470px;
+    height: 75px;
+    background: #FFFFFF;
+    border: 1px solid #0068FF;
+    color: #0068FF;
+    border-radius: 10px;
+}

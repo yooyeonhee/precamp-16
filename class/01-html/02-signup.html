@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!-- ./ 현재폴더 ../ 상위폴더 -->
+    <link href="./02-signup.css" rel="stylesheet">
+    <title>회원가입</title>
+</head>
+<body>
+    <div class="background">
+        <div class="form">
+            <h2>회원 가입을 위해<br>정보를 입력해주세요</h2>
+            * 이메일<br>
+            <input class="line" type="text"><br><br>
+            * 이름<br>
+            <input class="line" type="text"><br><br>
+            * 비밀번호<br>
+            <input class="line" type="password"><br><br>
+            * 비밀번호 확인<br>
+            <input class="line" type="password"><br><br>
+            <!--화면에는 뜨지만 선택은 불가능 하게.-->
+            <!--ed가 붙는 속성은 true 적지 않아도 된다.-->
+            <!-- <select>
+                <option disabled="true" selected="true">지역을 선택하세요.</option> 
+                <option>서울</option>
+                <option>경기</option>
+                <option>인천</option>
+            </select> -->
+                <!--(name) 그룹으로 묶어 하나만 선택되도록 한다.-->
+            <div class="form__select">
+                <div class="form__select__gender">
+                    <div class="form__select__gender__radio"><input type="radio" name="gender"><b>여성</b></div>
+                    <input type="radio" name="gender"> <b>남성</b>
+                </div>
+                <br>
+                <div class="form__select__agree">
+                <input type="checkbox"><b>이용약관 개인정보 수집 및 이용, 마케팅 활용 선택에 동의합니다.</b>
+                </div>
+            </div>
+            
+            <hr>
+            <!--button을 만드는 두 가지 방식. input 태그의 경우 꾸미기 어려움-->
+            <button><b>가입하기</b></button>
+            <!-- <input type="button" value="가입하기"> -->
+        </div>
+    </div>
+</body>
+</html>

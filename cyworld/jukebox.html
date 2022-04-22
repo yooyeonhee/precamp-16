@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>Music</title>
+    <link href="./styles/jukebox.css" rel="stylesheet">
+    <script src="./script/jukebox.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="wrapper__header">
+            <div class="header__title">
+                <div class="title">추억의 BGM</div>
+                <div class="subtitle">TODAY CHOICE</div>
+            </div>
+            <div class="divideLine"></div>
+            <div class="album__container">
+                <div class="album__container__song">
+                    <div class="song__img"><img src="./images/jukebox-01.png"></div>
+                    <div class="song__title">Y(Please Tell Me Why)</div>
+                    <div class="song__artist">프리스타일</div>
+                </div>
+                <div class="album__container__song">
+                    <div class="song__img"><img src="./images/jukebox-02.png"></div>
+                    <div class="song__title">눈의 꽃</div>
+                    <div class="song__artist">박효신</div>
+                </div>
+                <div class="album__container__song">
+                    <div class="song__img"><img src="./images/jukebox-03.png"></div>
+                    <div class="song__title">사랑했나봐</div>
+                    <div class="song__artist">윤도현</div>
+                </div>
+            </div>
+            <div class="album__table">
+                <div class="header__title">
+                    <div class="title">추억의 BGM</div>
+                    <div class="subtitle">TODAY CHOICE</div>
+                </div>
+                <table id="table" class="table">
+                    <tr>
+                        <!-- this는 이벤트가 발생한 element, 즉, 'all' 체크박스 -->
+                        <th class="th-1"><input type="checkbox" id="all" name="music" onclick='selectAll(this)'></th>
+                        <th class="th-2">번호</th>
+                        <th class="th-3">곡명</th>
+                        <th>아티스트</th>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"  name="music"></td>
+                        <td><center>1</center></td>
+                        <td>눈의 꽃</td>
+                        <td>박효신</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="music"></td>
+                        <td><center>2</center></td>
+                        <td>사랑스러워</td>
+                        <td>김종국</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="music"></td>
+                        <td><center>3</center></td>
+                        <td>내사람:Partner For Life</td>
+                        <td>SG 워너비</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="music"></td>
+                        <td><center>4</center></td>
+                        <td>Love Love Love</td>
+                        <td>에픽하이</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="music"></td>
+                        <td><center>5</center></td>
+                        <td>애인있어요</td>
+                        <td>이은미</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,169 @@
+@font-face {
+    font-family: 'Sci Fied Bitmap';
+    src: url('../font/scifibit.ttf') format('truetype');
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+    padding:20px 30px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.wrapper__header{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+}
+.header__title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.title{
+    /*글씨 속성*/
+    font-family: 'Malgun Gothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 17px;
+    text-align: justify;
+    color: #55B2D4;
+}
+.subtitle{
+    /*글씨 속성*/
+    margin-left: 5px;
+    font-family: 'Sci Fied Bitmap';
+    font-size: 8px;
+    margin-bottom: 1px;
+    letter-spacing: -0.08em;
+}
+.game__input__container{
+    display: flex;
+    flex-direction: row;
+
+}
+.game__title{
+    /*글씨 속성*/
+    font-family: 'Malgun Gothic';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #000000;
+}
+.game__subtitle{
+    /*글씨 속성*/
+    font-family: 'Malgun Gothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 13px;
+    text-align: center;
+    color: #999999;
+}
+.divideLine{
+    border-top: 1px solid gray;
+    width: 100%;
+}
+.game__container{
+    width: 222px;
+    height: 168px;
+    background-color:#F6F6F6;
+    border-radius: 15px;
+    border: 1px solid gray;
+    padding: 22px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+}
+#inputText{
+    width: 130px;
+    height: 24px;
+    padding-left:8px;
+    margin-right: 8px;
+    border-radius: 5px;
+
+}
+/*가상 선택자 안내문구에만 속성 적용*/
+#inputText::placeholder{
+    /*글씨 속성*/
+    font-family: 'Malgun Gothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 15px;
+    color: #999999;
+}
+#inputButton{
+    width: 38px;
+    height: 24px;
+}
+
+#gameResult{
+    /*글씨 속성*/
+    font-family: 'Malgun Gothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: center;
+    color: #999999;
+}
+
+.game__lotto{
+    width: 130px;
+    height: 21px;
+    background-color: #FFE400;
+    border: 1.4px solid black;
+    border-radius: 8px;
+    padding: 5px 8px;
+    margin: 8px 0px 8px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /*글씨 속성*/
+    font-family: 'Malgun Gothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 13px;
+    text-align: center;
+    color: #000000;
+}
+
+button{
+    background-color: white;
+    border: 1.4px solid black;
+    border-radius: 5px;
+    /*글씨 속성*/
+    font-family: 'Malgun Gothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: center;
+    color: #020101;
+    
+}
+/*가상 선택자 버튼 위에 마우스가 올라가면 속성이 바뀜*/
+button:hover{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}

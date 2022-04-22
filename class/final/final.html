@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>Final</title>
+    <script src="./final.js"></script>
+    <link href="./final.css" rel="stylesheet">
+</head>
+<body>
+    <div class="background">
+        <div class="form">
+            <div class="form__title">코드캠프 회원가입</div>
+            <div class="form__input">
+                <input id ="email" class="input__email userInfo" type="text" placeholder="이메일을 입력해주세요.">
+                <input id ="name" class="input__name userInfo" type="text" placeholder="이름을 입력해주세요.">
+                <input id ="pw1" class="input__pw1 userInfo" type="password" placeholder="비밀번호를 입력해주세요.">
+                <input id ="pw2" class="input__pw2 userInfo" type="password" placeholder="비밀번호를 다시 입력해주세요.">
+                <div class="form__check">
+                    <div class="check__number">
+                        <input class="userNum" id="number1" type="text" oninput="changeFocus1()" oninput="checkValidation()"  maxlength="3"> -
+                        <input class="userNum" id="number2" type="text" oninput="changeFocus2()" oninput="checkValidation()"  maxlength="4"> -
+                        <input class="userNum" id="number3" type="text" oninput="checkValidation()" maxlength="4">
+                    </div>
+                    <div class="check__send">
+                        <div id="token">000000</div>
+                        <button id="buttonAble" disabled = "true" onclick="pressedBtn()">인증번호 전송</button>
+                    </div>
+                    <div class="check__time">
+                        <span id="timer">03:00</span>
+                        <button id="okToken" onclick="ok()">인증확인</button>
+                    </div>
+                </div>
+                <select>
+                    <option disabled="true" selected="true">지역을 선택하세요.</option> 
+                    <option>서울</option>
+                    <option>경기</option>
+                    <option>인천</option>
+                </select>
+                <div class="form__gender">
+                    <div class="spaceGender"><input type="radio" name="gender"><b>여성</b></div>
+                    <input type="radio" name="gender"> <b>남성</b>
+                </div>
+            </div>
+            <div class="divideLine"></div>
+            <button id="join" disabled="true">가입하기</button>
+        </div>
+    </div>
+</body>
+</html>
