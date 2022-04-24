@@ -82,17 +82,25 @@ const ok = () =>{
 }
 
 const checkAllValidation = () => {
-    const number1 = document.getElementById("number1").value
-    const number2 = document.getElementById("number2").value
-    const number3 = document.getElementById("number3").value
+    const email = document.getElementById("email").value
+    const name = document.getElementById("name").value
+    const pw1 = document.getElementById("pw1").value
+    const pw2 = document.getElementById("pw2").value
+    const finishToken = document.getElementById("okToken").innerText
+    const selectBox = document.getElementById("selectBox").value
+    const checkBox = document.querySelector('input[name="gender"]').checked;
     
-    if(number1 && number2 && number3){ //(email !== "" && pw1 !== "" && pw2!== "" ) => mdn falsy
-        document.getElementById("buttonAble").disabled = false;
+    if(email && name && pw1 && pw2 && finishToken==="인증완료" && selectBox && checkBox ){ 
+        document.getElementById("join").disabled = false;
     
     }
     // 1개라도 비어있다면 버튼 비활성화 
     else{
-        document.getElementById("buttonAble").disabled = true;
-        
+        document.getElementById("join").disabled = true;
+        console.log(checkBox)
     }
+}
+
+const hi = () => {
+    alert("가입 완료되었습니다.")
 }
